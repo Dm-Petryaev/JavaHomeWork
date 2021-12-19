@@ -62,8 +62,7 @@ public class PhoneBook {
         Scanner scan = new Scanner(System.in);
         System.out.println("Введите ФИО или номер для поиска: ");
         String str = scan.nextLine();
-        // создаём дефолтный объект, куда вписываем str
-        // и сравниваем значение str со списком пользователей
+
         Person def = new Person(str, "default", str,
                 LocalDate.of(1970, 1, 1), LocalDateTime.now());
         for (int i = 0; i < phonebook.size(); i++) {
